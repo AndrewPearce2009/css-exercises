@@ -8,14 +8,26 @@ body {
   font-weight: 800;
 }
 
+/* Original implementation of my solution had me
+use the below  chained selectors.
+After review of the solution I'm cleaning up the code 
+to improve my understanding of the conventions.
+
 .para.small-para {
   font-size: 14px;
   font-weight: 800;
-}
+}*/
 
 .para {
   font-size: 22px;
 }
+
+.small-para {
+  font-size: 14px;
+  font-weight: 800;
+}
+
+/* Here I used the ID but I also unnecessarily changed the background attribute to background-color. I'll leave this unchaged though. */
 
 #confirm-button {
   background-color: green;
@@ -28,6 +40,8 @@ body {
   color: rgb(0, 0, 0);
   font-size: 20px;
 }
+
+
 
 .text.child {
   color: rgb(0, 0, 0);
