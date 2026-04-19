@@ -8,20 +8,19 @@ body {
   font-weight: 800;
 }
 
+/* Original implementation of my solution had me
+use the below  chained selectors.
+After review of the solution I'm cleaning up the code 
+to improve my understanding of the conventions.
+
 .para.small-para {
   font-size: 14px;
   font-weight: 800;
-}
+}*/
 
 .para {
   font-size: 22px;
 }
-
-#confirm-button {
-  background-color: green;
-  color: white;
-  font-weight: bold;
-} 
 
 .button {
   background-color: rgb(255, 255, 255);
@@ -29,14 +28,37 @@ body {
   font-size: 20px;
 }
 
+div.text {
+  color: rgb(0, 0, 0);
+  font-size: 22px;
+  font-weight: 100;
+}
+
+.small-para {
+  font-size: 14px;
+  font-weight: 800;
+}
+
+/* Here I used the ID but I also unnecessarily changed the background attribute to background-color. I'll leave this unchaged though. */
+
+#confirm-button {
+  background-color: green;
+  color: white;
+  font-weight: bold;
+} 
+
+/* I've changed the code block I had here to the same as in the solution file, and reordered the code blocks to be the same as in the solution file as well - mostly to see if there is any difference in the outcome.
+
 .text.child {
   color: rgb(0, 0, 0);
   font-weight: 800;
   font-size: 14px;
 }
 
-div.text {
+There wasn't any noticeable difference in the results, but I'm sure the control over the output is better. That said, with my limited understanding I think that there's further areas of improvement but my mind is foggy today so I can't readily pick things out.*/
+
+div .child {
   color: rgb(0, 0, 0);
-  font-size: 22px;
-  font-weight: 100;
+  font-weight: 800;
+  font-size: 14px;
 }
